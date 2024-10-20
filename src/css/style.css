@@ -1,11 +1,11 @@
 body {
   padding: 0;
-  z-index: -1;
   color: aliceblue;
   background: linear-gradient(-45deg, rgb(43, 55, 73), rgb(12, 17, 29), rgb(7, 18, 32), rgb(17, 24, 39), rgb(49, 64, 88));
   background-size: 500% 500%;
-  animation: gradient 35s ease infinite;
+  animation: gradient 30s ease infinite;
 }
+
 .intro {
   color: white;
   margin: 0;
@@ -13,17 +13,12 @@ body {
   padding: 5px;
 }
 
-
-
 @keyframes gradient {
-  0% {
+  0%, 100% {
     background-position: 0% 50%;
   }
   50% {
     background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
 
@@ -45,12 +40,6 @@ main {
   justify-items: center;
 }
 
-@media (min-width: 720px) {
-  section {
-      width: 800px;
-  }
-}
-
 section {
   margin-bottom: 20px; 
   padding: 15px;
@@ -59,9 +48,10 @@ section {
   text-align: left;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 700; 
+@media (min-width: 720px) {
+  section {
+      max-width: 800px;
+  }
 }
 
 h2 a {
@@ -78,7 +68,7 @@ footer, nav {
   justify-content: center;
   align-items: center;
   background-color: #1f1f1f;
-  padding: 20px 0px;
+  padding: 20px 0;
   color: white;
   flex-wrap: wrap;
 }
@@ -88,6 +78,7 @@ footer ul, nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 
 footer ul li, nav ul li {
