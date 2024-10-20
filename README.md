@@ -1,2 +1,2 @@
-# sitio-web
-Pensando en hacer un cv online.
+# Sitio-web
+Blog personal hecho sin frameworks.
