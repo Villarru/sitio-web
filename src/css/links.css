@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    z-index: -1;
+    color: aliceblue;
+    background: linear-gradient(-45deg, rgb(45, 60, 82), rgb(12, 17, 29), rgb(13, 33, 59), rgb(17, 24, 39), rgb(41, 60, 90));
+    background-size: 500% 500%;
+    animation: gradient 25s ease infinite;
+  }
+
+.intro {
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+  }
+
+  
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    padding-top: 170px;
+    padding-bottom: 280px;
+}
+  
+.links h2 {
+    color: aliceblue;
+}
+  
+.links nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.links nav ul li {
+    margin: 0;
+}
+  
+.links nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.links nav ul li a:hover {
+    background-color: #3ea6b4;
+    color: azure;
+}
+  
+.material-icons {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

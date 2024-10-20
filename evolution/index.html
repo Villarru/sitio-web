@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../src/css/nrm.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        section{ 
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+        }
+    </style>
+    
+    <title>Saludos</title>
+</head>
+<body>
+    <header>      
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="./post.html">Acerca de</a></li>
+                <li>|</li>
+                <li><a href="/">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section style="z-index: 10; min-height: 400px;">  
+        <div id='ruffle'></div>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            player.style.width = "800px";  // Ancho del reproductor
+            player.style.height = "600px"; // Altura del reproductor
+        
+            document.getElementById('ruffle').appendChild(player);
+            player.load('Evolution.swf').then(() => {
+                player.play();
+            });
+        </script>
+    </section>
+</body>
+</html>
