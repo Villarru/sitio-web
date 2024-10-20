@@ -78,10 +78,9 @@ footer, nav {
   justify-content: center;
   align-items: center;
   background-color: #1f1f1f;
-  padding: 20px;
+  padding: 20px 0px;
   color: white;
   flex-wrap: wrap;
-  margin-top: 20px; /* Añadir espacio arriba si es necesario */
 }
 
 footer ul, nav ul {
@@ -99,6 +98,8 @@ footer a, nav a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 footer a:hover, nav a:hover {

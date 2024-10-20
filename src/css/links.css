@@ -2,7 +2,7 @@ body {
     padding: 0;
     z-index: -1;
     color: aliceblue;
-    background: linear-gradient(-45deg, rgb(45, 60, 82), rgb(12, 17, 29), rgb(13, 33, 59), rgb(17, 24, 39), rgb(41, 60, 90));
+    background: linear-gradient(-45deg, rgb(45, 60, 82), rgb(19, 27, 46), rgb(13, 33, 59), rgb(17, 24, 39), rgb(45, 68, 105));
     background-size: 500% 500%;
     animation: gradient 25s ease infinite;
   }
@@ -21,7 +21,7 @@ body {
     align-items: center;
     margin:0;
     padding-top: 170px;
-    padding-bottom: 280px;
+    padding-bottom: 250px;
 }
   
 .links h2 {
@@ -39,7 +39,34 @@ body {
 .links nav ul li {
     margin: 0;
 }
-  
+
+@media (max-width: 520px) {
+    .links nav ul li {
+        margin: 0;
+        min-width: 200px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav ul li a {
+        text-align: center;
+    }
+
+    .links {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+}
+
+section{
+    width: 100%;
+    margin-bottom: 20px; 
+    padding: 15px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
 .links nav ul li a {
     display: flex;
     align-items: center;
@@ -60,4 +87,13 @@ body {
     font-size: 30px;
     vertical-align: middle;
     margin-right: 5px;
+}
+main {
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 55px 0px;
+}
+footer{
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
 }
